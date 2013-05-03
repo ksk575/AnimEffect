@@ -1,0 +1,9 @@
+TODO list
+
+ * Japanese labels
+ * Parameter Category
+ * FREQ parameter
+ * bundle OpenCV shared library
+ * copyright, credits
+ * code cleanup ; remove if 0 aviutils
+ * error handling

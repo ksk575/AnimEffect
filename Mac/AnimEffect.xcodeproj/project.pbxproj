@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6041F2BF172E34FE00C3CE69 /* AnimEffectPiPL.r in Rez */ = {isa = PBXBuildFile; fileRef = 6041F2BC172E34FE00C3CE69 /* AnimEffectPiPL.r */; };
+		6041F2C7172E363F00C3CE69 /* libopencv_core.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6041F2C6172E363F00C3CE69 /* libopencv_core.2.4.5.dylib */; };
+		6041F2C9172E367900C3CE69 /* libopencv_imgproc.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6041F2C8172E367900C3CE69 /* libopencv_imgproc.2.4.5.dylib */; };
+		6041F324172E43AC00C3CE69 /* libopencv_highgui.2.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6041F323172E43AC00C3CE69 /* libopencv_highgui.2.4.5.dylib */; };
+		60967EE3172EB71200E3CAF0 /* AnimEffect_Func.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60967EE2172EB71200E3CAF0 /* AnimEffect_Func.cpp */; };
+		60968027172ECC4C00E3CAF0 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 60968001172ECC4C00E3CAF0 /* images */; };
+		60B9F8BE1733E2B8003831B2 /* AnimEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6041F2BA172E34FE00C3CE69 /* AnimEffect.cpp */; };
+		60B9F8C21733E31A003831B2 /* AnimEffect_Strings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6041F2B8172E34FE00C3CE69 /* AnimEffect_Strings.cpp */; };
+		D0FE579D0993C5E500139A60 /* AEGP_SuiteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0FE579A0993C5E500139A60 /* AEGP_SuiteHandler.cpp */; };
+		D0FE579E0993C5E500139A60 /* MissingSuiteError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0FE579C0993C5E500139A60 /* MissingSuiteError.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6041F2B8172E34FE00C3CE69 /* AnimEffect_Strings.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AnimEffect_Strings.cpp; path = ../AnimEffect_Strings.cpp; sourceTree = SOURCE_ROOT; };
+		6041F2B9172E34FE00C3CE69 /* AnimEffect_Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimEffect_Strings.h; path = ../AnimEffect_Strings.h; sourceTree = SOURCE_ROOT; };
+		6041F2BA172E34FE00C3CE69 /* AnimEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnimEffect.cpp; path = ../AnimEffect.cpp; sourceTree = SOURCE_ROOT; };
+		6041F2BB172E34FE00C3CE69 /* AnimEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimEffect.h; path = ../AnimEffect.h; sourceTree = SOURCE_ROOT; };
+		6041F2BC172E34FE00C3CE69 /* AnimEffectPiPL.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; name = AnimEffectPiPL.r; path = ../AnimEffectPiPL.r; sourceTree = SOURCE_ROOT; };
+		6041F2C6172E363F00C3CE69 /* libopencv_core.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.5.dylib; path = /opt/local/lib/libopencv_core.2.4.5.dylib; sourceTree = "<absolute>"; };
+		6041F2C8172E367900C3CE69 /* libopencv_imgproc.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.2.4.5.dylib; path = /opt/local/lib/libopencv_imgproc.2.4.5.dylib; sourceTree = "<absolute>"; };
+		6041F323172E43AC00C3CE69 /* libopencv_highgui.2.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.5.dylib; path = /opt/local/lib/libopencv_highgui.2.4.5.dylib; sourceTree = "<absolute>"; };
+		60967EE2172EB71200E3CAF0 /* AnimEffect_Func.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnimEffect_Func.cpp; path = ../AnimEffect_Func.cpp; sourceTree = SOURCE_ROOT; };
+		60967EE4172EB72000E3CAF0 /* AnimEffect_Func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimEffect_Func.h; path = ../AnimEffect_Func.h; sourceTree = SOURCE_ROOT; };
+		60968001172ECC4C00E3CAF0 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		C4E618CC095A3CE80012CA3F /* AnimEffect.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimEffect.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0FE579A0993C5E500139A60 /* AEGP_SuiteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = AEGP_SuiteHandler.cpp; path = ../../../Util/AEGP_SuiteHandler.cpp; sourceTree = SOURCE_ROOT; };
+		D0FE579B0993C5E500139A60 /* AEGP_SuiteHandler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AEGP_SuiteHandler.h; path = ../../../Util/AEGP_SuiteHandler.h; sourceTree = SOURCE_ROOT; };
+		D0FE579C0993C5E500139A60 /* MissingSuiteError.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = MissingSuiteError.cpp; path = ../../../Util/MissingSuiteError.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4E618CA095A3CE80012CA3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6041F2C7172E363F00C3CE69 /* libopencv_core.2.4.5.dylib in Frameworks */,
+				6041F2C9172E367900C3CE69 /* libopencv_imgproc.2.4.5.dylib in Frameworks */,
+				6041F324172E43AC00C3CE69 /* libopencv_highgui.2.4.5.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6041F2B7172E34E300C3CE69 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				60967EE4172EB72000E3CAF0 /* AnimEffect_Func.h */,
+				60967EE2172EB71200E3CAF0 /* AnimEffect_Func.cpp */,
+				6041F2B8172E34FE00C3CE69 /* AnimEffect_Strings.cpp */,
+				6041F2B9172E34FE00C3CE69 /* AnimEffect_Strings.h */,
+				6041F2BA172E34FE00C3CE69 /* AnimEffect.cpp */,
+				6041F2BB172E34FE00C3CE69 /* AnimEffect.h */,
+				6041F2BC172E34FE00C3CE69 /* AnimEffectPiPL.r */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		60967FFB172ECBC400E3CAF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60968001172ECC4C00E3CAF0 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4E6187C095A3C800012CA3F = {
+			isa = PBXGroup;
+			children = (
+				60967FFB172ECBC400E3CAF0 /* Resources */,
+				6041F323172E43AC00C3CE69 /* libopencv_highgui.2.4.5.dylib */,
+				6041F2C8172E367900C3CE69 /* libopencv_imgproc.2.4.5.dylib */,
+				6041F2C6172E363F00C3CE69 /* libopencv_core.2.4.5.dylib */,
+				6041F2B7172E34E300C3CE69 /* src */,
+				D0FE57630993C4FD00139A60 /* Supporting Code */,
+				C4E6188C095A3C800012CA3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4E6188C095A3C800012CA3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4E618CC095A3CE80012CA3F /* AnimEffect.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0FE57630993C4FD00139A60 /* Supporting Code */ = {
+			isa = PBXGroup;
+			children = (
+				D0FE579A0993C5E500139A60 /* AEGP_SuiteHandler.cpp */,
+				D0FE579B0993C5E500139A60 /* AEGP_SuiteHandler.h */,
+				D0FE579C0993C5E500139A60 /* MissingSuiteError.cpp */,
+			);
+			name = "Supporting Code";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4E618CB095A3CE80012CA3F /* AnimEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4E618CE095A3CE90012CA3F /* Build configuration list for PBXNativeTarget "AnimEffect" */;
+			buildPhases = (
+				C4E618C8095A3CE80012CA3F /* Resources */,
+				C4E618C9095A3CE80012CA3F /* Sources */,
+				C4E618CA095A3CE80012CA3F /* Frameworks */,
+				C4E618EA095A3E040012CA3F /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimEffect;
+			productName = Skeleton.plugin;
+			productReference = C4E618CC095A3CE80012CA3F /* AnimEffect.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4E6187E095A3C800012CA3F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C4E6187F095A3C800012CA3F /* Build configuration list for PBXProject "AnimEffect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = C4E6187C095A3C800012CA3F;
+			productRefGroup = C4E6188C095A3C800012CA3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4E618CB095A3CE80012CA3F /* AnimEffect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4E618C8095A3CE80012CA3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60968027172ECC4C00E3CAF0 /* images in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		C4E618EA095A3E040012CA3F /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6041F2BF172E34FE00C3CE69 /* AnimEffectPiPL.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4E618C9095A3CE80012CA3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FE579D0993C5E500139A60 /* AEGP_SuiteHandler.cpp in Sources */,
+				D0FE579E0993C5E500139A60 /* MissingSuiteError.cpp in Sources */,
+				60B9F8C21733E31A003831B2 /* AnimEffect_Strings.cpp in Sources */,
+				60B9F8BE1733E2B8003831B2 /* AnimEffect.cpp in Sources */,
+				60967EE3172EB71200E3CAF0 /* AnimEffect_Func.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C4E61880095A3C800012CA3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+				);
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_REUSE_STRINGS = NO;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = NO;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../Headers,
+					../../../Util,
+					../../../Headers/SP,
+					../../../Resources,
+				);
+				REZ_PREPROCESSOR_DEFINITIONS = __MACH__;
+				SDKROOT = macosx10.6;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		C4E618CF095A3CE90012CA3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CONFIGURATION_BUILD_DIR = "/Library/Application Support/Adobe/Common/Plug-ins/CS6/MediaCore";
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../Headers,
+					../../../Util,
+					../../../Headers/SP,
+					../../../Resources,
+					/opt/local/include,
+				);
+				INFOPLIST_FILE = "AnimEffect.plugin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = AnimEffect;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				SYMROOT = build;
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4E6187F095A3C800012CA3F /* Build configuration list for PBXProject "AnimEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E61880095A3C800012CA3F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		C4E618CE095A3CE90012CA3F /* Build configuration list for PBXNativeTarget "AnimEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E618CF095A3CE90012CA3F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4E6187E095A3C800012CA3F /* Project object */;
+}

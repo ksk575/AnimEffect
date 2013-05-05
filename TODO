@@ -2,6 +2,7 @@ TODO list
 
  * Japanese labels
  * FREQ parameter
+ * multithreading
  * bundle OpenCV shared library
  * copyright, credits, version based on 0_07
  * code cleanup ; remove if 0 aviutils

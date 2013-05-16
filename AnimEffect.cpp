@@ -8,6 +8,9 @@
 #include "AnimEffect.h"
 #include "AnimEffect_Func.h"
 
+#include <pthread.h>
+static pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
 static PF_Err 
 About (	
 	PF_InData		*in_data,
@@ -54,12 +57,10 @@ GlobalSetup (
 	out_data->out_flags = PF_OutFlag_NONE
 	    | PF_OutFlag_WIDE_TIME_INPUT		// 0x00000002
 	    | PF_OutFlag_NON_PARAM_VARY			// 0x00000004
-//	    | PF_OutFlag_DISPLAY_ERROR_MESSAGE	// 0x00000100
 	    ;
 
 	out_data->out_flags2 = PF_OutFlag2_NONE
 	    | PF_OutFlag2_PPRO_DO_NOT_CLONE_SEQUENCE_DATA_FOR_RENDER // 0x00008000
-	    | PF_OutFlag2_AUTOMATIC_WIDE_TIME_INPUT // 0x00020000
 	    ;
 	return PF_Err_NONE;
 }
@@ -238,8 +239,15 @@ Render (
 {
 	PF_Err				err		= PF_Err_NONE;
 
+	// I found that Render is sometimes preempted by another thread
+	// even though PF_OutFlag2_PPRO_DO_NOT_CLONE... is enabled,
+	// and it breaks the static variables in RenderAnimEffect.
+	// To avoid that we use a mutex explicitly here.
+	pthread_mutex_lock(&mutex);
+
 	err = RenderAnimEffect(in_data, out_data, params, output);
 
+	pthread_mutex_unlock(&mutex);
 	return err;
 }
 

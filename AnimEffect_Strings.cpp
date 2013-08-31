@@ -27,49 +27,50 @@ typedef struct {
 } TableString;
 
 
-#if 0 /* Japanese Strings. Not ready yet; some string is not displayed correctly */
-TableString		g_strs[StrID_NUMTYPES] = {
+/* Japanese Strings */
+TableString		g_strs_ja[StrID_NUMTYPES] = {
 	StrID_NONE,		"",
-	StrID_Name,		"æ‰‹æãé¢¨ã‚¨ãƒ•ã‚§ã‚¯ãƒˆ",
+	StrID_Name,		"è•`‚«•—ƒGƒtƒFƒNƒg",
 	StrID_Description,	"AnimEffect\rCopyright 2013 kskP / original works by t-ogura and nmlP.",
-	StrID_MODE,		"ãƒ¢ãƒ¼ãƒ‰",
+	StrID_MODE,		"ƒ‚[ƒh",
 	StrID_MODE_CHOICES,		"1|2|3|4|5|6",
-	StrID_LINE,		"è¼ªéƒ­",
-	StrID_TOPIC_LINE,	"è¼ªéƒ­ãƒ‘ãƒ©ãƒ¡ã‚¿",
+	StrID_LINE,		"—ÖŠs",
+	StrID_TOPIC_LINE,	"—ÖŠsƒpƒ‰ƒƒ^",
 	StrID_LINESTEP,		"Line Step",
-	StrID_LINEINTERVAL,	"æŠ½å‡ºé–“éš”",
+	StrID_LINEINTERVAL,	"’ŠoŠÔŠu",
 	StrID_LINELENGTH,	"Line Length",
 	StrID_LINEWIDTH,	"Line Width",
 	StrID_LINENOISE,	"Line Noise",
-	StrID_MDARK,		"ç·šæ¿ƒåº¦",
+	StrID_MDARK,		"ü”Z“x",
 	StrID_LINETYPE,		"Line Type",
 	StrID_LINETYPE_CHOICES,		"NORMAL|Canny Gray|Canny RGB|Canny Gray RGB",
 	StrID_CANNYTH1,		"CannyTh1",
 	StrID_CANNYTH2,		"CannyTh2",
-	StrID_HATCHING,		"ãƒãƒƒãƒãƒ³ã‚°",
-	StrID_TOPIC_HATCHING,	"ãƒãƒƒãƒãƒ³ã‚°ãƒ‘ãƒ©ãƒ¡ã‚¿",
-	StrID_PATTERNNO,	"ãƒ‘ã‚¿ãƒ¼ãƒ³No.",
+	StrID_HATCHING,		"ƒnƒbƒ`ƒ“ƒO",
+	StrID_TOPIC_HATCHING,	"ƒnƒbƒ`ƒ“ƒOƒpƒ‰ƒƒ^",
+	StrID_PATTERNNO,	"ƒpƒ^[ƒ“No.",
 	StrID_PATTERNNO_CHOICES,	"0|1|2|3",
-	StrID_INCLINATION,	"å‚¾ã",
-	StrID_INCRANGE,		"å‚¾å¤‰å‹•å¹…",
-	StrID_DENSEMAX,		"æ¿ƒåº¦ä¸Šé™",
-	StrID_XRANGE,		"Xå¤‰å‹•å¹…",
-	StrID_YRANGE,		"Yå¤‰å‹•å¹…",
-	StrID_MAGNITUDE,	"æ‹¡å¤§ç‡",
-	StrID_ANGLE,		"å›è»¢è§’åº¦",
-	StrID_SATURATION,	"å½©åº¦ä¿‚æ•°",
-	StrID_BRIGHTNESS,	"æ˜åº¦ç³»æ•°",
+	StrID_INCLINATION,	"ŒX‚«",
+	StrID_INCRANGE,		"ŒX•Ï“®•",
+	StrID_DENSEMAX,		"”Z“xãŒÀ",
+	StrID_XRANGE,		"X•Ï“®•",
+	StrID_YRANGE,		"Y•Ï“®•",
+	StrID_MAGNITUDE,	"Šg‘å—¦",
+	StrID_ANGLE,		"‰ñ“]Šp“x",
+	StrID_SATURATION,	"Ê“xŒW”",
+	StrID_BRIGHTNESS,	"–¾“xŒn”",
 	StrID_VFLAG,		"VFlag",
-	StrID_RSEED,		"ä¹±æ•°ã‚·ãƒ¼ãƒ‰",
-	StrID_DIFFUSE,		"æ‹¡æ•£",
-	StrID_INVERT,		"ãƒ‘ã‚¿ãƒ¼ãƒ³åè»¢",
-	StrID_INTERPOLATION,	"è£œé–“",
+	StrID_RSEED,		"—”ƒV[ƒh",
+	StrID_DIFFUSE,		"ŠgU",
+	StrID_INVERT,		"ƒpƒ^[ƒ“”½“]",
+	StrID_INTERPOLATION,	"•âŠÔ",
 	StrID_INTERPOLATION_CHOICES,	"NONE|Bi-Linear|Bi-Cubic",
-	StrID_FREQUENCY,	"æ›´æ–°é–“éš”",
-	StrID_MAKEMASK,		"ãƒã‚¹ã‚¯ä½œæˆ",
+	StrID_FREQUENCY,	"XVŠÔŠu",
+	StrID_MAKEMASK,		"ƒ}ƒXƒNì¬",
 };
-#else /* English Strings */
-TableString		g_strs[StrID_NUMTYPES] = {
+
+/* English Strings */
+TableString		g_strs_en[StrID_NUMTYPES] = {
 	StrID_NONE,		"",
 	StrID_Name,		"AnimEffect",
 	StrID_Description,	"AnimEffect\rCopyright 2013 kskP / original works by t-ogura and nmlP.",
@@ -109,7 +110,17 @@ TableString		g_strs[StrID_NUMTYPES] = {
 	StrID_FREQUENCY,	"Frequency",
 	StrID_MAKEMASK,		"Make Mask",
 };
-#endif
+
+
+static TableString *g_strs = g_strs_en;
+
+void InitLocale(void)
+{
+	TextEncoding e = GetApplicationTextEncoding();
+	if (e == kTextEncodingMacJapanese) {
+	    g_strs = g_strs_ja;
+	}
+}
 
 char	*GetStringPtr(int strNum)
 {

@@ -63,3 +63,6 @@ typedef enum {
 	StrID_MAKEMASK,
 	StrID_NUMTYPES
 } StrIDType;
+
+extern void InitLocale(void);
+

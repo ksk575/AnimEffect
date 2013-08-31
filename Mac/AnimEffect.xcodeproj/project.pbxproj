@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6041F2B8172E34FE00C3CE69 /* AnimEffect_Strings.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AnimEffect_Strings.cpp; path = ../AnimEffect_Strings.cpp; sourceTree = SOURCE_ROOT; };
+		6041F2B8172E34FE00C3CE69 /* AnimEffect_Strings.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 2147483649; name = AnimEffect_Strings.cpp; path = ../AnimEffect_Strings.cpp; sourceTree = SOURCE_ROOT; };
 		6041F2B9172E34FE00C3CE69 /* AnimEffect_Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimEffect_Strings.h; path = ../AnimEffect_Strings.h; sourceTree = SOURCE_ROOT; };
 		6041F2BA172E34FE00C3CE69 /* AnimEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnimEffect.cpp; path = ../AnimEffect.cpp; sourceTree = SOURCE_ROOT; };
 		6041F2BB172E34FE00C3CE69 /* AnimEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimEffect.h; path = ../AnimEffect.h; sourceTree = SOURCE_ROOT; };

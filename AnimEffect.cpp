@@ -47,6 +47,9 @@ GlobalSetup (
 	}
 	InitAnimEffect(bundlePath);
 
+	/* Init Locale for effects labels */
+	InitLocale();
+
 	/* Setup OutFlags for AE plugin */
 	out_data->my_version = PF_VERSION(	MAJOR_VERSION, 
 										MINOR_VERSION,
